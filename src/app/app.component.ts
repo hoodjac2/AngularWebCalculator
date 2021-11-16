@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularWebCalculator';
+  total = 0;
+
+  public bttnClick(event: any){
+    console.log(event);
+  }
 }

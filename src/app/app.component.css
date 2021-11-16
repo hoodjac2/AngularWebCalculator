@@ -1,0 +1,35 @@
+.CalcContainer {
+  border-width: 3px;
+  border-color: black;
+  height: 500px;
+  width: 500px;
+  border-style: solid;
+  margin-left: 35%;
+}
+
+.NumberButtonGrid {
+  border-width: 3px;
+  border-color: red;
+  height: 250px;
+  width: 500px;
+  border-style: solid;
+  margin-top: 0%;
+}
+
+.OpsButtonGrid {
+  border-width: 3px;
+  border-color: blue;
+  height: 50px;
+  width: 500px;
+  border-style: solid;
+  margin-top: 0%;
+}
+.Total {
+  border-width: 3px;
+  border-color: green;
+  height: 150px;
+  width: 250px;
+  padding-left: 50%;
+  border-style: solid;
+  margin-top: 0%;
+}
