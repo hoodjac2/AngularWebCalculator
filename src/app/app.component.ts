@@ -24,39 +24,21 @@ export class AppComponent {
           rhs = rhs.concat(input);
         }
       } else {
-        if( op === ''){
-          op = input;
-        } else {
-          switch(op){
-            case '+':
-              this.total += Number(lhs) + Number(rhs);
-              break;
-            case '*':
-              this.total += Number(lhs) * Number(rhs);
-              break;
-            case '/':
-              this.total += Number(lhs) / Number(rhs);
-              break;
-            case '-':
-              this.total += Number(lhs) - Number(rhs);
-              break;
-          }
-          op = '';
-        }
+        op = input;
       }
     });
     switch(op){
       case '+':
-        this.total += Number(lhs) + Number(rhs);
+        this.total = Number(lhs) + Number(rhs);
         break;
       case '*':
-        this.total += Number(lhs) * Number(rhs);
+        this.total = Number(lhs) * Number(rhs);
         break;
       case '/':
-        this.total += Number(lhs) / Number(rhs);
+        this.total = Number(lhs) / Number(rhs);
         break;
       case '-':
-        this.total += Number(lhs) - Number(rhs);
+        this.total = Number(lhs) - Number(rhs);
         break;
     }
     this.display = this.total.toString();
