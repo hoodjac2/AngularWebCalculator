@@ -9,27 +9,27 @@
 
 .NumberButtonGrid {
   border-width: 3px;
-  border-color: red;
+  /* border-color: white; */
   height: 250px;
   width: 500px;
-  border-style: solid;
+  /* border-style: solid; */
   margin-top: 0%;
 }
 
 .OpsButtonGrid {
   border-width: 3px;
-  border-color: blue;
+  /* border-color: black; */
   height: 50px;
   width: 500px;
-  border-style: solid;
+  /* border-style: solid; */
   margin-top: 0%;
 }
 .Total {
   border-width: 3px;
-  border-color: green;
+  border-color: white;
   height: 150px;
-  width: 250px;
-  padding-left: 50%;
+  width: 450px;
+  padding-left: 5%;
   border-style: solid;
   margin-top: 0%;
 }

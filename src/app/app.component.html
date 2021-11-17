@@ -1,54 +1,62 @@
 <h1>Simple Angular Web Calculator</h1>
 
 <div class="CalcContainer">
-  <h1 class="Total">{{total}} </h1>
+  <h1 class="Total">{{display}} </h1>
+  <mat-divider></mat-divider>
   <div class="OpsButtonGrid">
     <mat-grid-list cols="4" rowHeight="50px">
       <mat-grid-tile >
-        <button mat-raised-button >+</button>
+        <button mat-raised-button (click)="opBttnClick('+')" >+</button>
       </mat-grid-tile>
       <mat-grid-tile >
-        <button mat-raised-button>-</button>
+        <button mat-raised-button (click)="opBttnClick('-')">-</button>
       </mat-grid-tile>
       <mat-grid-tile >
-        <button mat-raised-button>*</button>
+        <button mat-raised-button (click)="opBttnClick('*')">*</button>
       </mat-grid-tile>
       <mat-grid-tile >
-        <button mat-raised-button>/</button>
+        <button mat-raised-button (click)="opBttnClick('/')">/</button>
       </mat-grid-tile>
     </mat-grid-list>
   </div>
+  <mat-divider></mat-divider>
   <div class="NumberButtonGrid">
     <mat-grid-list cols="3" rowHeight="50px" ratio gutterSize="10px" >
       <mat-grid-tile >
-        <button mat-raised-button (click)="bttnClick($event)">7</button>
+        <button mat-raised-button (click)="numberBttnClick('7')">7</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>8</button>
+        <button mat-raised-button (click)="numberBttnClick('8')">8</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>9</button>
+        <button mat-raised-button (click)="numberBttnClick('9')">9</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>4</button>
+        <button mat-raised-button (click)="numberBttnClick('4')">4</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>5</button>
+        <button mat-raised-button (click)="numberBttnClick('5')">5</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>6</button>
+        <button mat-raised-button (click)="numberBttnClick('6')">6</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>1</button>
+        <button mat-raised-button (click)="numberBttnClick('1')">1</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>2</button>
+        <button mat-raised-button (click)="numberBttnClick('2')">2</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>3</button>
+        <button mat-raised-button (click)="numberBttnClick('3')">3</button>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-raised-button>0</button>
+        <button mat-raised-button (click)="numberBttnClick('0')">0</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-raised-button (click)="clear()">Clear</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-raised-button (click)="calculateTotal()">Calculate</button>
       </mat-grid-tile>
     </mat-grid-list>
   </div>
